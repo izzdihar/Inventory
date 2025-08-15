@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+      <OutputType>WinExe</OutputType>
+          <TargetFramework>net8.0-windows</TargetFramework>
+              <UseWindowsForms>true</UseWindowsForms>
+                  <AssemblyName>Chaipia Inventory Program</AssemblyName>
+                      <Nullable>enable</Nullable>
+                          <ImplicitUsings>enable</ImplicitUsings>
+                              <PublishSingleFile>true</PublishSingleFile>
+                                  <SelfContained>false</SelfContained>
+                                      <PublishTrimmed>false</PublishTrimmed>
+                                        </PropertyGroup>
+                                          <ItemGroup>
+                                              <None Update="inventory_general.csv">
+                                                    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+                                                          <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+                                                              </None>
+                                                                  <None Update="inventory_toiletries.csv">
+                                                                        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+                                                                              <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+                                                                                  </None>
+                                                                                      <None Update="history.csv">
+                                                                                            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+                                                                                                  <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+                                                                                                      </None>
+                                                                                                        </ItemGroup>
+                                                                                                        </Project>
